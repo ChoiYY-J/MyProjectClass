@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5; IE=8" />
+		<title>新闻二级</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/news.css"/>
+		<link rel="stylesheet" type="text/css" href="../font/iconfont.css"/>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/news.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--------------------top-------------------->
+		<div class="header_wrap">
+			<div class="topnav" id="topnav">
+	            <div class="w1200 h_w_top_main">
+	                <div class="fl h_w_top_m_regsiter">
+	                    <span class="fl">越信赖，越贴心，买房就找筑家易！</span>
+	                    <!--热门城市-->
+	                    <ul class="fl h_w_top_m_city">
+		    				<li class="curr_city">热门城市：</li>
+		                    <li><a href="">杭州</a></li>
+		                    <li><a href="">南京</a></li>
+		                    <li><a href="">无锡</a></li>
+		                    <li><a href="">上海</a></li>
+		                    <li><a href="">郑州</a></li>
+		                    <li><a href="">合肥</a></li>
+		                    <li><a href="">西安</a></li>
+		                    <li><a href="">海口</a></li>
+		                    <li><a href="">三亚</a></li>
+	        			</ul>
+	                </div>
+	                <div class="fr h_w_top_m_nav" id="header-info">
+	                	<a class="link erweima">
+	                        <div class="p_h_wximg">
+	                            <img src="img/we-chat-img.jpg"/>
+	                        </div>
+	                        
+	                        <i class="iconfont">&#xe62e;</i>
+
+	                        <span>微信公众号</span>
+	                    </a>
+	                    <a href="/site/bottom/2" class="link" target="_blank">
+	                        <i class="iconfont">&#xe606;</i>
+	                        <span>联系我们</span>
+	                    </a>
+	                </div>
+	            </div>
+	        </div>
+			<div class="topsearch">
+	            <a href="/site/index" class="fl p_h_ts_logo">
+	                <img src="img/logo-liejia.png"/>
+	            </a>
+	            <a href="#" class="fl p_h_ts_city">
+	                <b>郑州</b>
+	            </a>
+	            <div class="p_h_ts_search">
+	                <!--搜索、热门楼盘-->
+	                <div class="p_h_ts_s_input">
+			            <input type="text" class="input" id="searchinput" name="searchinput" placeholder="晖达新世界">
+			       		<a class="search_btn" id="searchBtn">搜索</a>
+					</div>
+				</div>
+			</div>
+			<div class="columnnav">
+				<div class="w1200 fast_nav">
+					<div class="sortBox" id="sortMenu">
+						<div class="AllSortBtn menuBtn">
+                        	<span class="menuBtn_i">楼盘分类</span>
+                        	<div class="side-nav">
+								<div class="Vertical-menu">
+									<ul id="week">
+										<li class="odd-li quyu">
+											<a class="kind" href="#" target="_blank">区域</a>
+											<a class="PLU" href="html/loupan-list.html" target="_blank">中中原区</a>
+											<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+											<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+											<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+										   	<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+										   	<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+										   	<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+										   	<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+										   	<a class="PLU" href="html/loupan-list.html" target="_blank">中原区</a>
+											<div class="submenu01" style="display: none;">
+												<div class="submenu01-1">
+													<strong>所有区域</strong>
+													<span>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+													</span>
+												</div>
+											</div>
+										</li>
+										<li class="odd-li danjia">
+											<a class="kind" href="javascript:void(0);" target="_blank">价格</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">4千以下</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">4千-5千</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">5千-6千</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">6千-8千</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">8千以上</a>
+											<div class="submenu01" style="display: none;">
+												<div class="submenu01-1">
+													<strong>所有区域</strong>
+													<span>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">1.2万-1.5万</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">5-6千</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">5-6千</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">1-1.2万</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">8千-1万</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+													</span>
+												</div>
+											</div>
+										</li>
+										<li class="odd-li kptime">
+											<a class="kind" href="javascript:void(0);" target="_blank">开盘时间</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">已开盘</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">未开盘</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">已开盘</a>
+											<a class="PLU" href="javascript:void(0);" target="_blank">未开盘</a>
+											<div class="submenu01" style="display: none;">
+												<div class="submenu01-1" style="border-bottom: none;">
+													<strong>所有区域</strong>
+													<span>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+														<a class="sub-p" href="javascript:void(0);" target="_blank">单肩包</a>
+													</span>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<ul class="orient-nav">
+						<li class="seled">
+							<h2><a href="#">首页</a></h2>
+						</li>
+						<li>
+							<h2><a href="#">购房指南</a></h2>
+						</li>
+						<li>
+							<h2><a href="#">房产资讯</a></h2>
+						</li>
+						<li>
+							<h2><a href="#">楼盘动态</a></h2>
+						</li>
+						<li>
+							<h2><a href="#">楼市动态</a></h2>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!------------------top-end------------------->
+		<div class="news-sec-main-wrap clearfix">
+			<div class="news-sec-main">
+				<div class="news-location">
+					您的位置><a href="#">楼市动态</a>><a href="#">绿地新都会新闻</a>
+				</div>
+			
+				<div class="news-sec-main-left">
+					<div class="news-tit">
+						<h3>银基国际旅游度假区目前洋房 别墅房源在售</h3>
+						<h4>来吧、一起来玩儿吧</h4>
+					</div>
+					<div class="news-tit-sub">
+						<span class="tit-sub-span1">
+							新闻来源：百花网
+						</span>
+						<span class="tit-sub-span2">
+							2017-12-02
+						</span>
+						<span class="tit-sub-span3">
+							我要分享
+							<div class="share-dialog-litt">
+					    		<div class="share-dialog-cont">
+							        <div class="share-platform">
+							            <div class="share-platform-r">
+							                <div class="bdsharebuttonbox bdshare-button-style1-32" data-bd-bind="1487053015556">
+							                    <a href="javascript:void(0);" target="_blank" class="i-bds_weixin" data-cmd="weixin" title="分享到微信" style="border: none;"></a>
+							                    <a href="javascript:void(0);" target="_blank" class="i-bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="border: none;"></a>
+							                    <a href="javascript:void(0);" target="_blank" class="i-bds_sqq" data-cmd="sqq" title="分享到QQ好友" style="border: none;"></a>
+							                    <a href="javascript:void(0);" target="_blank" class="i-bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="border: none;"></a>
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+							</div>
+						</span>
+					</div>
+					<div class="news-text">
+						<p>
+							鑫苑名城仅剩2套建筑面积约121平房源在售，整体均价为12500元/平米，分布在二期南苑4#，优惠为交6千享2万。
+							在售商铺建筑面积约20-300平米，主要分布在一期北苑1#和南苑1#，价格在14000-35000元/平米，优惠；交1万享5万。具体详情以售楼处为准。
+						</p>
+						<!--<p>
+							鑫苑名城仅剩2套建筑面积约121平房源在售，整体均价为12500元/平米，分布在二期南苑4#，优惠为交6千享2万。
+							在售商铺建筑面积约20-300平米，主要分布在一期北苑1#和南苑1#，价格在14000-35000元/平米，优惠；交1万享5万。具体详情以售楼处为准。
+							在售商铺建筑面积约20-300平米，主要分布在一期北苑1#和南苑1#，价格在14000-35000元/平米，优惠；交1万享5万。具体详情以售楼处为准。
+						</p>
+						<p>
+							鑫苑名城仅剩2套建筑面积约121平房源在售，整体均价为12500元/平米，分布在二期南苑4#，优惠为交6千享2万。
+							在售商铺建筑面积约20-300平米，主要分布在一期北苑1#和南苑1#，价格在14000-35000元/平米，优惠；交1万享5万。具体详情以售楼处为准。
+							在售商铺建筑面积约20-300平米，主要分布在一期北苑1#和南苑1#，价格在14000-35000元/平米，优惠；交1万享5万。具体详情以售楼处为准。
+						</p>-->
+					</div>
+				
+              		<p class="news-shengming">
+              			<strong>猎拓科技免责声明：</strong>本文为转载，猎拓科技网不对页面中所涉面积、价格等所有楼盘相关信息的真实性、完整性、及时性不作任何保证或承诺，吉屋网不承担任何法律责任，请读者仅作参考，并请自行核实相关内容，最终以开发商公布为准。如对内容有疑义，请及时与我们联系。
+              		</p>
+				</div>
+				<div class="loup_list_side">
+						<div class="list_side_box">
+							<h2 class="side_box_tit">最新开盘</h2>
+							<ul class="side_list">
+								<li>
+									<a href="#">
+										<span class="pic">
+											<img src="../img/loup-img.jpg" style="width:98px;height:74px;">
+										</span>
+										<span class="name">阳光城</span>
+										<span class="info">约25000元/平米</span>
+										<span class="info">面积：78.36－144㎡</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="pic">
+											<img src="../img/loup-img.jpg" style="width:98px;height:74px;">
+										</span>
+										<span class="name">阳光城</span>
+										<span class="info">约25000元/平米</span>
+										<span class="info">面积：78.36－144㎡</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<span class="pic">
+											<img src="../img/loup-img.jpg" style="width:98px;height:74px;">
+										</span>
+										<span class="name">阳光城</span>
+										<span class="info">约25000元/平米</span>
+										<span class="info">面积：78.36－144㎡</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+		</div>
+			<!-------------------------友情链接------------------------->
+		<div id="footer-wrap">
+			<div class="friend-link-wrap">
+				<div class="friend-link">
+					<span class="friend-link-tit">热门城市</span>
+					<div class="company-link f-w-hot-city">
+						<ul>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+							<li><a href="javascript:void(0);" target="_blank">郑州</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="friend-link-wrap">
+				<div class="friend-link">
+					<span class="friend-link-tit">友情链接</span>
+					<div class="company-link">
+						<ul>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+							<li><a href="javascript:void(0);" target="_blank">晖达新世界</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-com">www.loudd.com.cn All Rights Reserved河南猎拓科技有限公司</div>
+			</div>
+		</div>
+	</body>
+		
+		
+</html>

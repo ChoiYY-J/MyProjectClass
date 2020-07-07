@@ -1,0 +1,197 @@
+/*---------------banner--------------*/
+#banner {
+    position: relative;
+    margin: 0 auto;
+    width: 1200px;
+    height: 360px;
+    z-index: 0;
+    margin: 0 auto 10px;
+}
+#image-list {
+	margin-left: 250px;
+	position: relative;
+}
+#image-list img {
+    position: absolute;
+    display: none;
+    width: 950px;
+    height: 360px;
+    vertical-align: bottom;
+    filter: alpha(opacity:0);
+    opacity: 0;    
+}
+
+#image-list .active {
+    display: block;
+    filter: alpha(opacity:100);
+    opacity: 1;
+}
+
+#btn-list {
+    position: absolute;
+    right: 36%;
+    bottom: 20px;
+  
+  
+}
+
+#btn-list a {
+    display: block;
+    float: left;
+    margin: 0 5px;
+    width: 20px;
+    height: 8px;
+   /* border: 2px solid rgba(255, 255, 255, .3);*/
+    /*border: 2px solid #a4a4a4;*/
+    background: #ececec;
+    border-radius: 2px;
+    transition: all .2s;
+}
+
+#btn-list a:hover, #btn-list .active {
+    /*	background: rgba(255, 255, 255, .4);*/
+    background: #c40000;
+    border-color: #c40000;
+}
+
+#switch-btn span {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 41px;
+    height: 69px;
+    background: url(../img/icon-slides.png) no-repeat;
+}
+
+#switch-btn .left-btn {
+    /*background-position: -83px 0;*/
+    background-position: 0px 0;
+    left: 23.2%;
+}
+/*#switch-btn .left-btn:hover {
+	background-position: 0 0;
+}*/
+#switch-btn .right-btn {
+    background-position: -41px 0;
+    right: 2.5%;
+}
+
+/*-------------banner-end-----------------*/
+/*热销推荐部分*/
+.rexiao,.zuixin{
+	width: 1200px;
+	margin: 0 auto;	
+	position: relative;
+}
+.rexiao-tit,.zuixin-tit{
+	display: block;
+    height: 60px;
+    line-height: 86px;
+    font-size: 28px;
+    color: #4c4948;
+    font-family: "微软雅黑";
+    margin-bottom: 16px;
+}
+.tit-right{
+	width: 100px;
+    height: 20px;
+    text-align: right;
+   	line-height: 20px;
+    position: absolute;
+    top: 35px;
+    right: 0;
+}
+.tit-right a{
+	font-size: 16px;
+    color: #999;
+}
+
+.lp-list {
+    width: 290px;
+    float: left;
+    margin-left: 13px;
+    margin-bottom: 20px;
+}
+.lp-list:nth-child(1){
+	margin-left: 0;
+}
+.lp-list:nth-child(5){
+	margin-left: 0;
+}
+.lp-list .lp-img-box {
+    position: relative;
+    margin-bottom: 2px;
+    width: 290px;
+    height: 174px;
+    overflow: hidden;
+    display: block;
+}
+.lp-list .img {
+    width: 100%;
+}
+.lp-list .lp-advantage {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    height: 30px;
+    line-height: 30px;
+    text-indent: 10px;
+    color: #fff;
+    width: 100%;
+}
+.lp-list .lp-name a {
+    color: #1f3e4c;
+    font-size: 18px;
+    font-weight: bold;
+}
+.lp-list .s_area {
+    color: #999;
+    font-size: 14px;
+}
+.lp-list .s_price {
+    color: #666;
+    font-size: 14px;
+    height: 27px;
+    overflow: hidden;
+}
+.lp-list .s_price_num {
+    color: #c40000;
+    font-size: 18px;
+    font-weight: bold;
+}
+.lp-list .btn {
+    width: 80px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    background-color: #ff5757;
+    border-radius: 2px;
+    font-size: 14px;
+}
+/****——————————新闻动态————————*****/
+.xinwen-dongtai{width: 1200px;overflow: hidden;margin: 0 auto 16px;height: 400px;}
+.lp-dongtai{float: left;width: 380px;margin-right: 20px;}
+.lp-dongtai-title{width: 380px;height:66px;}
+.lp-dongtai-tit,.lp-loushi-tit{font-size: 28px;width:200px;height:66px;line-height:66px;float:left;color:#4c4948;}
+.lp-dongtai-tit-right,.lp-loushi-tit-right{width:80px;float:right;text-align: right;height: 20px;line-height: 20px;margin-top: 26px;}
+.lp-dongtai-tit-right a,.lp-loushi-tit-right a{font-size: 16px;color:#999;}
+.lp-dongtai-tit-right a:hover,.lp-loushi-tit-right a:hover{color:#EA5B24}
+.lp-dongtai-list li,.lp-loushi-list li{ font-size:16px;height: 20px;line-height: 20px;margin-top: 15px;overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+.lp-dongtai-list li a,.lp-loushi-list li a{color:#333;font-size:14px;}
+.lp-dongtai-list li a span,.lp-loushi-list  li a span {padding: 0 10px; color: #ddd;}
+.lp-loushi{float: left;width: 380px;margin-right: 20px;}
+.lp-loushi-title{height:66px;line-height:72px;width: 380px;}
+.lp-dongtai-list li:hover a,.lp-loushi-list li:hover a{color:#EA5B24;}
+/*ad-banner广告位*/
+.ad-banner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 60px;
+    margin-bottom: -4px;
+}
+.ad-banner img{
+	width: 100%;
+	height: 60px;	
+}

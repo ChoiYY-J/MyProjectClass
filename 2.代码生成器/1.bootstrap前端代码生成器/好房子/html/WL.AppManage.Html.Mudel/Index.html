@@ -1,0 +1,140 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=5; IE=8" />
+		<title>楼盘列表页</title>
+		<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css"/>
+		<script src="../../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/loup-list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../Scripts/My97DatePicker/WdatePicker.js"></script>
+		<script src="../../Scripts/Customer/Customer.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$(function() {
+					Sys_PageSize = 20;
+				})
+				var back_stage = new customer_option();
+				back_stage.customer_search();
+
+				$(document).on("mouseover", ".floor", function(e) {
+					layer.tips($(this).attr("allword"), this, {
+						tips: [2, '#e95513']
+					});
+				});
+				//导出功能
+				$("#DaoChu").click(function() {
+					var data = {};
+					data.name = $("#name").val();
+					data.loupanname = $("#loupanname").val();
+					data.mobile = $("#mobile").val();
+					data.CusState = $("#customer_state").val();
+					data.huifangid = $("#huifangid").val();
+					data.starttime = $("#starttime").val();
+					data.endtime = $("#endtime").val();
+					data.state = $("#state").val();
+					$.fileDownload("/CustomerOperation/OutExcel", {
+						data: {
+							info: stringify(data)
+						}
+					});
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<form class="navbar-form navbar-right" role="search">
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+		<div class="container-fluid" style="margin-top: 5px" id="body" resid="@ViewBag.resid">
+			<div class="breadcrumb" style="text-align:right;position:relative;">
+				
+			</div>
+			<div class="clearfix">
+			</div>
+			<div class="form-search" style="margin-top: 0px;">
+				<div>
+					<div id="divDrop" class="controls" style="margin-bottom: 3px;">
+						@*城市
+						@Html.DropDownList("selCity", (List<SelectListItem>)ViewData["selCity"], new { @Class = "span2" })*@
+							客户姓名
+							<input id="name" type="text" value="" class="span2" style="height:30px" />
+							楼盘名称
+							<input id="loupanname" type="text" value="" class="span2" style="height:30px" />
+							手机号
+							<input id="mobile" type="text" value="" class="span2" style="height:30px" />
+							客户状态
+							<select id="customer_state" class="span2">
+								<option value="0">请选择</option>
+								<option value="1">报备</option>
+								<option value="2">到访</option>
+								<option value="3">认筹</option>
+								<option value="4">定房</option>
+								<option value="6">签约</option>
+								<option value="5">退房</option>
+							</select>
+							领取状态
+							<select id="state" class="span2">
+								<option value="0">请选择</option>
+								<option value="1">正常</option>
+								<option value="2">客户池</option>
+								<option value="3">删除</option>
+							</select>
+							查询日期
+							<input id="starttime" name="starttime" value="" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd', maxDate: '#F{$dp.$D(\'endtime\')', maxDate: '%y-%M-#{%d}' })"
+							 placeholder="请输入开始日期" type="text" style="height: 30px;width:150px; margin-top: 3px; margin-bottom: 3px;" />
+							-
+							<input id="endtime" name="endtime" value="" onclick="WdatePicker({ dateFmt: 'yyyy-MM-dd', minDate: '#F{$dp.$D(\'starttime\')}', maxDate: '%y-%M-#{%d}' })"
+							 placeholder="请输入结束日期" type="text" style="height: 30px; width: 150px; margin-top: 3px; margin-bottom: 3px;" />
+							<br />回访人
+							@Html.DropDownList("huifangid", (List<SelectListItem>)ViewData["huifangid"], new { @Class = "span2" })
+								<div tabindex="0" class="btn btn-primary" id="search_customer" style="float:right; margin-right: 13px;">查询</div>
+					</div>
+				</div>
+			</div>
+			<table class="table table-bordered table-hover definewidth m10">
+				<thead>
+					<tr>
+						<th style="text-align:center;width:5%"><input type="checkbox" name="list_checkbox_all" id="list_checkbox_all"> 序号</th>
+						<th style="text-align: center; width: 5%">客户名称</th>
+						<th style="text-align: center; width: 6%">手机号</th>
+						<th style="text-align: center; width: 8%">当前楼盘</th>
+						<th style="text-align: center; width: 4%">性别</th>
+						<th style="text-align: center; width: 4%">等级</th>
+						<th style="text-align: center; width: 6%">价格区间</th>
+						<th style="text-align: center; width: 4%">类型</th>
+						<th style="text-align: center; width: 5%">数据状态</th>
+						<th style="text-align: center; width: 5%">客户状态</th>
+						<th style="text-align: center; width: 7%">改变状态时间</th>
+						<th style="text-align: center; width: 6%">置业顾问</th>
+						<th style="text-align: center; width: 7%">最后回访时间</th>
+						<th style="text-align: center; width: 7%">报备时间</th>
+						<th style="text-align: center; width: 5%">当前回访人</th>
+						<th style="text-align: center; width: 14%">操作</th>
+					</tr>
+				</thead>
+				<tbody id="list">
+					@Html.Raw(ViewBag.strHtml)
+				</tbody>
+			</table>
+			<nav aria-label="...">
+			  <ul class="pagination">
+			    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+			    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+			    ...
+			  </ul>
+			<div id="Pagination">
+				<nav aria-label="...">
+				  <ul class="pagination">
+				    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+				    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">2 <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">3 <span class="sr-only">(current)</span></a></li>
+					<li class="active"><a href="#">4 <span class="sr-only">(current)</span></a></li>
+				  </ul>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>
+			

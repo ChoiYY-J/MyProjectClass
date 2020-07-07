@@ -1,0 +1,389 @@
+.side-nav{display: none;}
+.loup_tags_wrap {
+    width: 100%;
+    height: auto;
+}
+.loup_tags_wrap_in {
+    width: 1200px;
+    margin: 0 auto;
+}
+.loup_tags_main{
+	padding: 0 20px;
+	margin-top: 30px;
+    width: 1158px;
+    border: 1px solid #f2f3f7;
+    background: #fff;
+}
+.loup_tags_main dl {
+    border-top: 1px dashed #f2f3f7;
+    padding: 9px 0 8px 8px;
+    line-height: 35px;
+    margin-top: -1px;
+}
+.loup_tags_main dt {
+    font-size: 14px;
+    color: #a9b6ca;
+    float: left;
+    width: 70px;
+}
+.loup_tags_main dd {
+    float: left;
+}
+.loup_tags_main dd ul {
+    width: 1008px;
+}
+.loup_tags_main dd li {
+    float: left;
+    line-height: 35px;
+    height: 35px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.loup_tags_main dd li a.l_cur {
+    color: #e91c35;
+}
+.loup_tags_main dd li a {
+    font-size: 14px;
+    color: #425571;
+    padding-right: 6px;
+    overflow: hidden;
+}
+.selected-tags{
+	padding: 10px 2px 0px 2px;
+    
+    border-top: 1px dashed #f2f3f7;
+}
+.selected-tags .quyu-tag-left{
+    float: left;
+    padding: 0 8px 0 0;
+    margin-bottom: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #a9b6ca;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 6px;   
+}
+.quyu-tag-list li{
+    float: left;
+    display: inline;
+    padding: 2px 10px 2px 10px;
+    margin-left: 10px;
+    line-height: 24px;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+.quyu-tag-list li .delete-x {
+    float: right;
+    display: block;
+    padding-left: 7px;
+    font-size: 16px;
+    color: #4C4948;
+}
+.selected-tags  .qingkong {
+    float: left;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    margin: 2px 0 0 14px;
+    padding-left: 20px;
+    background:url(../img/delete-x.png) no-repeat 0px 6px;   
+}
+.sort-tags-wrap{
+	width: 1198px;
+	margin: 20px auto 0;
+	border: 1px solid #ddd;
+}
+.sort-tags{
+	padding: 10px 2px 0px 2px;
+}
+.sort-tags .quyu-tag-left{
+    float: left;
+    padding: 0 8px 0 20px;
+    margin-bottom: 10px;
+    line-height: 28px;
+    font-size: 14px;
+    color: #a9b6ca;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 6px;   
+}
+.sort-tags .quyu-tag-list li {
+    float: left;
+    margin-right: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.sort-tags .quyu-tag-list li a {
+    display: block;
+    float: left;
+}
+.sort-tags .quyu-tag-list li span {
+    float: right;
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    margin-left: 6px;
+    padding-left: 7px;
+    background: url(../img/arrow-down.png) no-repeat 0px center;
+}
+/*楼盘列表*/
+.big_loup_list_wrap{
+	width: 1200px;
+	margin: 0 auto;
+}
+.loup_list_wrap {
+    float: left;
+    width: 850px;
+}
+.loup_card {
+    padding: 30px 0 31px;
+    position: relative;
+    min-height: 156px;
+}
+.loup_imgbox {
+    border: 1px solid #f5f6fa;
+    margin-right: 20px;
+    width: 206px;
+    float: left;
+    position: relative;
+}
+.loup_imgbox .img-w {
+    display: block;
+    overflow: hidden;
+}
+.loup_imgbox img {
+    width: 206px;
+    height: 154px;
+    vertical-align: top;
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.pic_tag{
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+    padding: 0 4px;
+    background-color: rgba(255,255,255,.3);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4Dffffff',endColorstr='#4Dffffff');
+    color: #fff;
+    line-height: 20px;
+}
+.loup_titbox {
+    position: relative;
+    height: 156px;
+    padding-right: 65px;
+    float: left;
+    width: 470px;
+    margin-bottom: 20px;
+}
+.loup_titbox  h2 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 2px;
+}
+.loup_titbox h3 {
+    font-size: 14px;
+    color: #6d798c;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.loup_titbox h3 {
+    font-size: 14px;
+    color: #6d798c;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.loup_titbox .loup_tel {
+    color: #8290a6;
+}
+.loup_titbox h4 {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+}
+.loup_titbox h4 a {
+    font-size: 14px;
+    line-height: 14px;
+    margin-right: 10px;
+    color: #7699cc;
+}
+.loup_titbox h4 em {
+    width: 1px;
+    height: 12px;
+    background-color: #e0ecfa;
+    display: inline-block;
+    margin-right: 12px;
+}
+.loup_infobox {
+    position: absolute;
+    right: 20px;
+    font-size: 12px;
+    top: 68px;
+    line-height: 28px;
+    text-align: right;
+}
+.loup_infobox h2 {
+    color: #f1324c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.loup_infobox h2 strong {
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: 700;
+}
+.loup_card b {
+    position: absolute;
+    left: 0;
+    right: 60px;
+    bottom: 0;
+    width: 830px;
+  	height: 0;
+	border-bottom:1px solid #ddd;    
+}
+/*页码部分*/
+#Pagination {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+#Pagination .curr {
+    background-color: #00a0e9;
+    color: #fff;
+}
+.page {
+    border-bottom: none;
+    margin-top: 40px;
+    margin-bottom: 72px;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+}
+#Pagination a {
+    background-color: #f1eff0;
+    padding: 6px 12px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: black;
+    margin: 0 5px;
+}
+#Pagination .txtpage {
+    width: 39px;
+    text-align: center;
+    height: 21px;
+    margin: 0 5px;
+}
+/*侧边部分*/
+.loup_list_side {
+    float: right;
+    width: 320px;
+    margin-top: 20px;
+}
+.list_side_box{
+	margin-bottom: 20px;
+    background-color: #fafafc;
+}
+.side_box_tit {
+    height: 66px;
+    line-height: 66px;
+    padding-left: 40px;
+    font-size: 24px;
+    border-bottom: 1px solid #f2f3f7;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #455571;
+}
+.side_list {
+    padding: 10px 16px 0 30px;
+}
+.side_list li:first-child {
+    border: none;
+}
+.side_list li a {
+    display: block;
+    min-height: 76px;
+    cursor: pointer;
+}
+.side_list li .pic {
+    float: left;
+    margin-right: 14px;
+    width: 98px;
+    height: 74px;
+    overflow: hidden;
+    border: 1px solid #f5f6fa;
+    position: relative;
+}
+.side_list li span {
+    display: block;
+}
+.side_list li .name {
+    font-size: 14px;
+    color: #1d364c;
+    line-height: 24px;
+    height: 20px;
+    overflow: hidden;
+    padding: 3px 0 9px;
+    font-weight: 700;
+}
+.side_list li .info {
+    color: #6d798c;
+    line-height: 20px;
+}
+.side_list li {
+    padding: 20px 0;
+    border-top: 1px dashed #f2f3f7;
+}
+.resou_loup {
+    padding: 0px 20px 15px;
+}
+.resou_loup .resou_tit {
+    border-bottom: 1px dashed #ececec;
+    overflow: hidden;
+    width: 280px;
+}
+.resou_loup .resou_tit .n {
+    width: 85px;
+    float: left;
+}
+.resou_loup .resou_tit .p {
+    width: 80px;
+    float: right;
+    margin: 0px 16px;
+    text-align: center;
+}
+.resou_tit span {
+    display: block;
+    color: #999;
+    line-height: 40px;
+    font-size: 15px;
+}
+.resou_list  .lpline * {
+    line-height: 30px;
+    color: #333;
+}
+.lpline .n {
+    width: 100px;
+    font-size: 13px;
+    float: left;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.resou_list .lpline .p {
+    width: 108px;
+    font-size: 13px;
+    float: right;
+    text-align: center;
+}

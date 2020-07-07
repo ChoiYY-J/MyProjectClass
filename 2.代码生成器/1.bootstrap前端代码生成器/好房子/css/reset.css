@@ -1,0 +1,103 @@
+
+/*sinovatech reset css*/
+body,div,dl,dt,dd,del,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,menu,img{ 
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+	
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+ fieldset,img { 
+	border:0;
+} 
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+
+.wrap {
+	word-break:break-all;
+	word-wrap:break-word;
+}
+a {
+	text-decoration: none;
+	color:#4C4948;
+	cursor: pointer;
+}
+a:focus{outline:none;}
+/*
+a:hover {
+	text-decoration: none;
+	!*color:#C00;*!
+}
+a.active {
+	text-decoration: none;
+	color:#ff6600!important;
+}*/
+
+/*img样式*/
+img { border: 0 none; vertical-align: middle; }
+
+
+/*input样式*/
+input{
+	font-family:Arial, "微软雅黑";
+	font-size:12px;
+	vertical-align:middle;
+	outline: none;
+	
+}
+/* Hide from IE Mac */
+
+/* End hide from IE Mac */
+/* end of clearfix */
+
+.clearfix:after {
+    content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+
+
+input:-webkit-autofill {  
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;  
+}  
+
+body,
+button,
+input,
+select,
+textarea {
+	font: 12px/1.5 "Microsoft YaHei", tahoma, arial, \5b8b\4f53;
+	color: #666
+}
+
+a {
+	text-decoration: none
+}
+
+.ellipsis {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
